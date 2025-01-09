@@ -1,4 +1,7 @@
 # Need For Engineering Documentation: An Overview
+### Table Of Contents
+[<a href="Problem Statement">Overview</a>] [<a href="Read Documents Learning Path">Documents Learning Path</a>
+
 ## Problem Statement
 Hyland’s Technology organization is facing significant challenges due to the lack of standardized practices for engineering documentation. Engineers currently rely on ad hoc approaches, resulting in inconsistent and fragmented documentation that is difficult to locate and often varies in format, structure, and detail. This has created knowledge silos, where critical information resides with individuals rather than being accessible across the organization. Consequently, new hires struggle to onboard efficiently, and cross-functional teams, including solution engineers, services, and tech support, face challenges leveraging engineering outputs. The absence of automation and integration tools for documentation further exacerbates these issues, requiring manual effort and introducing inconsistencies. Additionally, poorly documented or undocumented systems slow developer productivity, as engineers must spend significant time interpreting existing code and systems. These challenges increase technical debt, hinder scalability, and slow time-to-market for new solutions. Addressing these issues by implementing clear standards, tools, and workflows for documentation would foster better collaboration, enhance developer productivity, and improve system maintainability.
 ## Business Values in Creating Engineering Documentation
@@ -33,5 +36,25 @@ Investing in standardized engineering documentation early as Technology moves in
 * **Support Long-Term Scalability**
   - **Outcome:** Establish scalable processes that adapt as the organization grows.
   - **Metric:** 100% compliance with documentation standards across repositories within a year; measurable efficiency gains in team operations as the organization scales (e.g., onboarding, project throughput).
+  
+# Read Documents Learning Path:
+
+## General Path: Apply to all types of Tech Stacks
+
+1. Read through <a href="README.md">parent readme document</a> to understand the need of Engineering Documentation and Code Standards to successfully develop a project in line with Modern Development Practices for documentation.
+     
+2. Read through <a href="EngineeringDocumentationStandards_GuidingPrinciples_ReadMe.md">Guiding Principles For Engineering Documentation Standards<a> to understand the principles which we have used to develop the projects present the repository.
  
- ### Next Read: <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/blob/master/EngineeringDocumentationStandards_GuidingPrinciples_ReadMe.md">Guiding Principles For Engineering Documentation Standards.ReadMe</a>
+3. Read through <a href="OpenAPIIntroduction_ReadMe.md">OpenAPI - An Introduction</a> to understand key elements of OpenAPI.
+
+4. Read through <a href="OpenAPIStandards_ReadMe.md">OpenAPI Documentation Standards</a> - understanding of which is very important for creating OpenAPI documentations.
+
+## Tech Stack Specific Path:
+
+1. Tech Stack: .NET 8
+   - Project Name: <a href="DotNetOpenAPI">DotNetOpenAPI</a>
+     - Read through <a href="DotNetOpenAPI/CodeCommentsStandards_ReadMe.md>Documentation Standards For Code Comments</a>
+     - Read through <a href="DotNetOpenAPI/InstallationIntructions_Readme.md">Project Information and Installation Instructions</a>
+
+![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
+  **The Tech Stack section is still under process and will be updated as other tech stack projects are added**
