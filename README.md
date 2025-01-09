@@ -45,7 +45,7 @@ Investing in standardized engineering documentation early as Technology moves in
   - **Outcome:** Establish scalable processes that adapt as the organization grows.
   - **Metric:** 100% compliance with documentation standards across repositories within a year; measurable efficiency gains in team operations as the organization scales (e.g., onboarding, project throughput).
   
-# Read Documents Learning Path:
+# ReadMe Documents Learning Path:
 
 ## General Path: Apply to all types of Tech Stacks
 
