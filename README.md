@@ -2,13 +2,13 @@
 
 ### Table Of Contents
 * **Overview:**
-  - <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/edit/master/README.md#problem-statement">Problem Statement</a>
-  - <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/edit/master/README.md#business-values-in-creating-engineering-documentation">Business Values</a>
-  - <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/edit/master/README.md#key-objectives-of-creating-engineering-documentation">Key Objectives</a>
+  - Problem Statement
+  - Business Values
+  - Key Objectives
 * **ReadMe Files Reading Path:**
-  - <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/edit/master/README.md#read-documents-learning-path">ReadMe Documents Learning Path</a>
-    - <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/edit/master/README.md#general-path-apply-to-all-types-of-tech-stacks">General Path For All Tech Stacks</a>
-    - <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/edit/master/README.md#tech-stack-specific-path">Tech Stack Specific Path</a>
+  - ReadMe Documents Learning Path
+    - General Path For All Tech Stacks
+    - Tech Stack Specific Path
 
 ## Problem Statement
 Hyland’s Technology organization is facing significant challenges due to the lack of standardized practices for engineering documentation. Engineers currently rely on ad hoc approaches, resulting in inconsistent and fragmented documentation that is difficult to locate and often varies in format, structure, and detail. This has created knowledge silos, where critical information resides with individuals rather than being accessible across the organization. Consequently, new hires struggle to onboard efficiently, and cross-functional teams, including solution engineers, services, and tech support, face challenges leveraging engineering outputs. The absence of automation and integration tools for documentation further exacerbates these issues, requiring manual effort and introducing inconsistencies. Additionally, poorly documented or undocumented systems slow developer productivity, as engineers must spend significant time interpreting existing code and systems. These challenges increase technical debt, hinder scalability, and slow time-to-market for new solutions. Addressing these issues by implementing clear standards, tools, and workflows for documentation would foster better collaboration, enhance developer productivity, and improve system maintainability.
