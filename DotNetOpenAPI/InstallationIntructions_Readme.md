@@ -1,4 +1,4 @@
-# DotNetOpenAPI
+# DotNetOpenAPI Project Information and Installation Instructions
 
 This project is an ASP.NET Core application with integrated Swagger for API documentation.
 
