@@ -1,0 +1,35 @@
+name: Deploy DocFX Documentation
+
+on:
+  push:
+    branches:
+      - master  # Change this to your default branch if different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Install DocFX
+      run: dotnet tool install -g docfx
+
+    - name: Build DocFX documentation
+      run: docfx build
+
+    - name: Deploy to GitHub Pages
+      run: |        
+        git clone --branch gh-pages https://github.com/${{ github.repository }}.git gh-pages
+        rsync -av --delete _site/ gh-pages/
+        cd gh-pages
+        git add .
+        git commit -m "Deploy DocFX documentation"
+        git push
+      
