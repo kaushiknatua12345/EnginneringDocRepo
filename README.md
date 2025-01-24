@@ -59,10 +59,9 @@ Investing in standardized engineering documentation early as Technology moves in
 
 ## Tech Stack Specific Path:
 
-1. Tech Stack: .NET 8
-   - Project Name: <a href="DotNetOpenAPI">DotNetOpenAPI</a>
-     - Read through <a href="DotNetOpenAPI/CodeCommentsStandards_ReadMe.md>Documentation Standards For Code Comments</a>
-     - Read through <a href="DotNetOpenAPI/InstallationIntructions_Readme.md">Project Information and Installation Instructions</a>
+1. Tech Stack: .NET 8   
+     - Read through <a href="CodeCommentsStandardsDorNet8.md">Documentation Standards For Code Comments</a>
+     - Read through <a href="DotNet8ProjectInstallationInstruction.md">Project Information and Installation Instructions</a>
 
 ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png)
   **The Tech Stack section is still under process and will be updated as other tech stack projects are added**
