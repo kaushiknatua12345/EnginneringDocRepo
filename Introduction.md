@@ -1,8 +1,7 @@
 # Need For Engineering Documentation
 
 ### Table Of Contents
-* **Overview:**
-  - Problem Statement
+* **Overview:**  
   - Business Values
   - Key Objectives
 * **ReadMe Files Reading Path:**
@@ -10,8 +9,6 @@
     - General Path For All Tech Stacks
     - Tech Stack Specific Path
 
-## Problem Statement
-Hyland’s Technology organization is facing significant challenges due to the lack of standardized practices for engineering documentation. Engineers currently rely on ad hoc approaches, resulting in inconsistent and fragmented documentation that is difficult to locate and often varies in format, structure, and detail. This has created knowledge silos, where critical information resides with individuals rather than being accessible across the organization. Consequently, new hires struggle to onboard efficiently, and cross-functional teams, including solution engineers, services, and tech support, face challenges leveraging engineering outputs. The absence of automation and integration tools for documentation further exacerbates these issues, requiring manual effort and introducing inconsistencies. Additionally, poorly documented or undocumented systems slow developer productivity, as engineers must spend significant time interpreting existing code and systems. These challenges increase technical debt, hinder scalability, and slow time-to-market for new solutions. Addressing these issues by implementing clear standards, tools, and workflows for documentation would foster better collaboration, enhance developer productivity, and improve system maintainability.
 ## Business Values in Creating Engineering Documentation
 Investing in standardized engineering documentation early as Technology moves into our new value/work streams enhances operational efficiency and scalability. By addressing knowledge silos and improving accessibility, documentation reduces dependencies, accelerates onboarding, and supports collaboration across teams. It minimizes technical debt, simplifies maintenance, and fosters innovation by providing clarity around code and systems. Automating updates ensures documentation evolves with the code, creating a sustainable process that supports long-term growth. Additionally, high-quality documentation strengthens relationships with customers and partners while signaling a commitment to excellence, reinforcing your organization’s ability to adapt and succeed.
 ## Key Objectives Of Creating Engineering Documentation
