@@ -2,12 +2,19 @@ name: Deploy DocFX Documentation
 
 on:
   push:
-    branches:
-      - master  # Change this to your default branch if different
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+    # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: DotNetOpenAPI
 
     steps:
     - name: Checkout code
