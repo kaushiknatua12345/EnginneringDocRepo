@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>OpenAPI Documentation Standards | DotNetOpenAPIDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="OpenAPI Documentation Standards | DotNetOpenAPIDocs ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/kaushiknatua12345/EnginneringDocRepo/blob/master/DotNetOpenAPI/DotNetOpenAPIDocs/Docs/OpenAPIStandards_ReadMe.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="DotNetOpenAPIDocs">
+            DotNetOpenAPIDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="openapi-documentation-standards">OpenAPI Documentation Standards</h1>
+
+<p>Creating effective OpenAPI documentation is essential for ensuring that your API is easy to understand, use, and maintain. OpenAPI (formerly Swagger) is a widely used specification for describing RESTful APIs. Developers should follow certain standards to ensure their OpenAPI documentation is clear, consistent, and useful to other developers and consumers.</p>
+<p>Here are the key standard practices for developers when creating OpenAPI documentation:</p>
+<p><strong>1. Adhere to the OpenAPI Specification (OAS) Version</strong></p>
+<ul>
+<li>Version Consistency: Use the latest stable version of the OpenAPI Specification (currently OpenAPI 3.x). Older versions may lack critical features and may be incompatible with modern tools.</li>
+<li>Schema Versioning: Clearly specify the version of your OpenAPI document in the openapi field. This helps maintain compatibility with different tools and libraries.</li>
+<li>Example:</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+openapi: 3.0.0
+</code></pre>
+<p><strong>2. Provide Clear and Comprehensive Descriptions</strong></p>
+<ul>
+<li>API Overview: Include a brief summary and description of what your API does in the info object. This helps consumers quickly understand its purpose.</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+info:
+  title: &quot;My API&quot;
+  description: &quot;This API allows users to manage and interact with resources.&quot;
+  version: &quot;1.0.0&quot;
+</code></pre>
+<ul>
+<li><p>Endpoint Descriptions: Provide clear descriptions of each endpoint and the intended use case. Ensure each HTTP method (GET, POST, etc.) has a meaningful description.</p>
+</li>
+<li><p>Parameter Descriptions: For each query, path, header, and request body parameter, provide a detailed description of its purpose and usage.</p>
+</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+paths:
+  /users/{userId}:
+    get:
+      summary: &quot;Retrieve user by ID&quot;
+      description: &quot;Fetches user details by their unique ID.&quot;
+      parameters:
+        - name: &quot;userId&quot;
+          in: &quot;path&quot;
+          description: &quot;ID of the user to fetch&quot;
+          required: true
+          schema:
+            type: &quot;string&quot;
+</code></pre>
+<p><strong>3. Use Meaningful Naming Conventions</strong></p>
+<ul>
+<li>Endpoints: Use consistent and RESTful naming conventions. For example, use plural nouns for resource names (/users, /products) and standard HTTP methods for actions (GET, POST, PUT, DELETE).</li>
+<li>Path Parameters: Ensure that path parameters have descriptive names that match the resource they represent.</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+/users/{userId}/orders/{orderId}:
+  get:
+    summary: &quot;Get a specific order for a user&quot;
+    parameters:
+      - name: &quot;userId&quot;
+        in: &quot;path&quot;
+        description: &quot;User identifier&quot;
+        required: true
+      - name: &quot;orderId&quot;
+        in: &quot;path&quot;
+        description: &quot;Order identifier&quot;
+        required: true
+</code></pre>
+<p><strong>4. Utilize Request and Response Examples</strong></p>
+<ul>
+<li>Example Requests: Provide examples of both request and response bodies to show how users should structure their data.</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+requestBody:
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          name:
+            type: string
+      examples:
+        example1:
+          value:
+            name: &quot;John Doe&quot;
+</code></pre>
+<ul>
+<li>Example Responses: Include example responses for different HTTP status codes (e.g., 200, 404, 500). This helps users understand the kind of responses they can expect from the API.</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+responses:
+  '200':
+    description: &quot;Successful response&quot;
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+        examples:
+          success:
+            value:
+              id: &quot;123&quot;
+              name: &quot;John Doe&quot;
+</code></pre>
+<p><strong>5. Use Proper HTTP Status Codes</strong></p>
+<ul>
+<li>Ensure that your API uses the correct HTTP status codes. For example:
+<ul>
+<li>200 OK for successful requests.</li>
+<li>400 Bad Request for validation errors or missing parameters.</li>
+<li>404 Not Found for non-existing resources.</li>
+<li>500 Internal Server Error for server issues.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+responses:
+  '400':
+    description: &quot;Bad request&quot;
+  '404':
+    description: &quot;Not found&quot;
+  '500':
+    description: &quot;Internal server error&quot;
+</code></pre>
+<p><strong>6. Define and Document Data Models Clearly</strong></p>
+<ul>
+<li>Schema Definitions: Use the components section to define reusable data models and schemas. This avoids redundancy and keeps the documentation DRY (Don’t Repeat Yourself).</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+    Order:
+      type: object
+      properties:
+        orderId:
+          type: string
+        productName:
+          type: string
+</code></pre>
+<ul>
+<li>Reference these models in your endpoints.</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+paths:
+  /users/{userId}:
+    get:
+      summary: &quot;Get user by ID&quot;
+      responses:
+        '200':
+          description: &quot;User found&quot;
+          content:
+            application/json:
+              schema:
+                $ref: &quot;#/components/schemas/User&quot;
+</code></pre>
+<p><strong>7. Use Security Schemes and Authentication</strong></p>
+<ul>
+<li>If your API requires authentication, define the security schemes in the components section and reference them in the security field.</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: X-API-Key
+
+security:
+  - apiKey: []
+</code></pre>
+<p><strong>8. Use Descriptive Tags for Organizing Endpoints</strong></p>
+<ul>
+<li>Group related endpoints under meaningful tags to improve navigation and organization in the documentation.</li>
+</ul>
+<pre><code class="lang-yaml">yaml
+
+paths:
+  /users:
+    get:
+      tags:
+        - &quot;User Operations&quot;
+      summary: &quot;Get all users&quot;
+</code></pre>
+<p><strong>9. Make Use of OpenAPI Tools</strong></p>
+<ul>
+<li>Leverage tools like Swagger UI, Redoc, and Postman to generate interactive documentation and explore API endpoints.</li>
+<li>Use validation tools to ensure your OpenAPI documents are well-formed and follow the specification.</li>
+</ul>
+<p><strong>10. Version Your API</strong></p>
+<ul>
+<li>Clearly indicate API versioning in both the URL (e.g., /v1/users) and in the info object. This helps avoid confusion as your API evolves over time.</li>
+</ul>
+<p><strong>11. Provide Helpful Error Handling</strong>
+Document all possible error responses, including common error types, response formats, and how users can address them.</p>
+<pre><code class="lang-yaml">yaml
+
+responses:
+  '400':
+    description: &quot;Bad request due to missing parameters&quot;
+    content:
+      application/json:
+        schema:
+          $ref: &quot;#/components/schemas/Error&quot;
+</code></pre>
+<p>By following these standards, developers can create OpenAPI documentation that is clear, consistent, and helpful to others working with their API, leading to better maintainability and a more streamlined development process.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/blob/master/DotNetOpenAPI/DotNetOpenAPIDocs/Docs/OpenAPIStandards_ReadMe.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
