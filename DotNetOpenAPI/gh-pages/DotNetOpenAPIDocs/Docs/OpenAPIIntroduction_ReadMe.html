@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>OpenAPI - An Introduction | DotNetOpenAPIDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="OpenAPI - An Introduction | DotNetOpenAPIDocs ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/kaushiknatua12345/EnginneringDocRepo/blob/master/DotNetOpenAPI/DotNetOpenAPIDocs/Docs/OpenAPIIntroduction_ReadMe.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="DotNetOpenAPIDocs">
+            DotNetOpenAPIDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="openapi---an-introduction">OpenAPI - An Introduction</h1>
+
+<h2 id="openapi">OpenAPI</h2>
+<p>OpenAPI is a specification for defining APIs (Application Programming Interfaces) that allows developers to describe their APIs in a standard, machine-readable format. The primary goal of OpenAPI is to create clear, concise, and easy-to-understand documentation for APIs. Here are the key elements and standards associated with OpenAPI documentation:</p>
+<h3 id="key-elements-of-openapi">Key Elements Of OpenAPI</h3>
+<p><strong>1. OpenAPI Specification (OAS) Versioning</strong></p>
+<ul>
+<li>The OpenAPI specification is versioned, and each version comes with new features and improvements. The latest version (as of January 2025) is OpenAPI 3.1.</li>
+<li>You should always ensure your documentation aligns with the version you're using. OpenAPI 3.x has several improvements over OpenAPI 2.0 (Swagger), including better support for JSON Schema and additional fields.</li>
+</ul>
+<p><strong>2. Structure of OpenAPI Documentation</strong>
+OpenAPI documents are usually written in YAML or JSON formats and contain several key sections. A typical structure includes:</p>
+<ul>
+<li>openapi: The version of the OpenAPI specification used (e.g., &quot;3.1.0&quot;).
+info: Contains metadata about the API, such as its title, description, version, contact information, and license.</li>
+<li>servers: Describes the available API servers, including URLs and any relevant variables.</li>
+<li>paths: Defines the available API endpoints (URLs) and the supported HTTP methods (GET, POST, PUT, DELETE, etc.). Each endpoint has details on parameters, request bodies, responses, etc.</li>
+<li>components: Defines reusable elements, such as:
+<ul>
+<li>schemas: Data models (usually represented in JSON Schema format) used in requests and responses.</li>
+<li>parameters: Reusable parameters for endpoints.</li>
+<li>responses: Predefined responses that can be referenced across multiple endpoints.</li>
+<li>securitySchemes: Authentication mechanisms like OAuth, API keys, etc.</li>
+</ul>
+</li>
+<li>security: Specifies the security requirements for the API.</li>
+<li>tags: Groupings of operations (e.g., &quot;User&quot; or &quot;Product&quot;) to help organize the API.</li>
+<li>externalDocs: Link to external documentation or resources.</li>
+</ul>
+<p><strong>3. Describing Operations and Endpoints</strong>
+Each API endpoint is described under the paths object. For example, a GET request to fetch a list of users might look like:</p>
+<pre><code class="lang-yaml">yaml
+
+paths:
+  /users:
+    get:
+      summary: Retrieve all users
+      operationId: getUsers
+      tags:
+        - Users
+      parameters:
+        - name: page
+          in: query
+          description: Page number for pagination
+          required: false
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+</code></pre>
+<p>This specifies:</p>
+<ul>
+<li>GET /users: A GET request to the /users endpoint.</li>
+<li>summary: A brief description of the operation.</li>
+<li>operationId: A unique name for the operation, useful for generating code or documentation.</li>
+<li>parameters: Query parameters or body content that the operation expects.</li>
+<li>responses: HTTP responses and their respective data.</li>
+</ul>
+<p><strong>4. Schemas and Data Types</strong>
+The components section defines reusable schemas that describe the structure of the request and response bodies. These schemas are often written in JSON Schema format. For example:</p>
+<pre><code class="lang-yaml">yaml
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+      required:
+        - id
+        - name
+        - email
+</code></pre>
+<p>This defines a User object with an id, name, and email, marking all of them as required.</p>
+<p><strong>5. Parameters</strong>
+Parameters are used to describe the inputs that an API method accepts. They can be passed via:</p>
+<ul>
+<li>path: Part of the URL (e.g., /users/{userId}).</li>
+<li>query: URL query parameters (e.g., /users?page=2).</li>
+<li>header: HTTP headers.</li>
+<li>cookie: Cookies.</li>
+<li>Parameters are defined with type, description, and constraints.</li>
+</ul>
+<p><strong>6. Responses and Status Codes</strong>
+The responses section describes the possible responses for an operation, including HTTP status codes and the response content type.</p>
+<pre><code class="lang-yaml">yaml
+
+responses:
+  '200':
+    description: Successful operation
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/User'
+  '404':
+    description: User not found
+'''
+
+**7. Security**
+OpenAPI supports various authentication mechanisms (e.g., API keys, OAuth2, JWT). These are defined under securitySchemes in the components section.
+
+Example using an API key for security:
+```yaml
+yaml
+
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      in: header
+      name: X-API-KEY
+
+security:
+  - api_key: []
+</code></pre>
+<p><strong>8. Documentation Tools</strong>
+There are many tools that can generate user-friendly documentation from OpenAPI specifications:</p>
+<ul>
+<li><strong>Swagger UI:</strong> A popular tool for displaying interactive API documentation.</li>
+<li><strong>Redoc:</strong> Another open-source tool for generating attractive documentation.</li>
+<li><strong>Postman:</strong> Allows you to import OpenAPI specs and interact with your API.</li>
+</ul>
+<p><strong>11. Code Generation</strong>
+Tools like <strong>Swagger Codegen</strong> and <strong>OpenAPI Generator</strong> can automatically generate client libraries, server stubs, and API documentation based on OpenAPI specifications.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/blob/master/DotNetOpenAPI/DotNetOpenAPIDocs/Docs/OpenAPIIntroduction_ReadMe.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

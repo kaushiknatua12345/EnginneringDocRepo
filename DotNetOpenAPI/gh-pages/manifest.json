@@ -1,0 +1,328 @@
+{
+  "source_base_path": "/home/runner/work/EnginneringDocRepo/EnginneringDocRepo/DotNetOpenAPI",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPI/docfx/CodeCommentsStandardsDorNet8.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPI/docfx/CodeCommentsStandardsDorNet8.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPI/docfx/ContributeStandards_ReadMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPI/docfx/ContributeStandards_ReadMe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPI/docfx/DotNet8ProjectInstallationInstruction.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPI/docfx/DotNet8ProjectInstallationInstruction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPI/docfx/EngineeringDocumentationStandards_GuidingPrinciples_ReadMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPI/docfx/EngineeringDocumentationStandards_GuidingPrinciples_ReadMe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPI/docfx/OpenAPIIntroduction_ReadMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPI/docfx/OpenAPIIntroduction_ReadMe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPI/docfx/OpenAPIStandards_ReadMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPI/docfx/OpenAPIStandards_ReadMe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPI/docfx/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPI/docfx/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPI/docfx/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPI/docfx/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPI/docfx/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPI/docfx/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/CodeCommentsStandardsDorNet8.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/CodeCommentsStandardsDorNet8.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/ContributeStandards_ReadMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/ContributeStandards_ReadMe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/DotNet8ProjectInstallationInstruction.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/DotNet8ProjectInstallationInstruction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/EngineeringDocumentationStandards_GuidingPrinciples_ReadMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/EngineeringDocumentationStandards_GuidingPrinciples_ReadMe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/OpenAPIIntroduction_ReadMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/OpenAPIIntroduction_ReadMe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/OpenAPIStandards_ReadMe.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/OpenAPIStandards_ReadMe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "DotNetOpenAPIDocs/Docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "DotNetOpenAPIDocs/Docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetOpenAPI.Controllers.EmployeesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetOpenAPI.Controllers.EmployeesController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetOpenAPI.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetOpenAPI.Controllers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetOpenAPI.Models.EmployeeDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetOpenAPI.Models.EmployeeDB.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetOpenAPI.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetOpenAPI.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetOpenAPI.Repositories.CRUDActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetOpenAPI.Repositories.CRUDActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetOpenAPI.Repositories.ICRUDActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetOpenAPI.Repositories.ICRUDActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DotNetOpenAPI.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DotNetOpenAPI.Repositories.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

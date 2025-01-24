@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Documentation Standards For Code Comments | DotNetOpenAPIDocs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Documentation Standards For Code Comments | DotNetOpenAPIDocs ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/kaushiknatua12345/EnginneringDocRepo/blob/master/DotNetOpenAPI/DotNetOpenAPI/docfx/CodeCommentsStandardsDorNet8.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="DotNetOpenAPIDocs">
+            DotNetOpenAPIDocs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="documentation-standards-for-code-comments">Documentation Standards For Code Comments</h1>
+
+<p>In .NET 8, the documentation standards for code comments, especially for classes and methods, are based on XML documentation comments. These comments serve as a standardized way to document code for better maintainability, usability, and integration with tools like Visual Studio or other IDEs.</p>
+<ul>
+<li><p><strong>Class-level Documentation</strong>
+At the class level, document the purpose of the class and its key features.</p>
+<ul>
+<li><strong>Standards:</strong>
+<ul>
+<li><strong>Purpose:</strong> Describe the primary role of the class and its responsibilities.</li>
+<li><strong>Dependencies:</strong> List important dependencies or relationships to other classes, components, or systems.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Method/Function-level Documentation</strong>
+Each method should have documentation explaining what it does, its parameters, and its return value. If applicable, include exceptions that the method can throw.</p>
+<ul>
+<li><strong>Standards:</strong>
+<ul>
+<li><strong>Purpose:</strong> What is the method doing? Why does it exist?</li>
+<li>Parameters: A brief description of each input parameter, including the type and expected values or range (if applicable).</li>
+<li>Return Value: Describe what the method returns, its type, and possible return values.</li>
+<li>Exceptions: Mention any exceptions the method may raise and under what conditions.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Here is a guide on how to properly document classes and methods with XML documentation comments in .NET 8:</p>
+<h2 id="general-xml-documentation-comments-structure">General XML Documentation Comments Structure</h2>
+<p>XML comments use the following syntax:</p>
+<pre><code>/// &lt;summary&gt;
+/// Brief description of what the class, method, or property does.
+/// &lt;/summary&gt;
+/// &lt;remarks&gt;
+/// Additional detailed information about the class, method, or property.
+/// &lt;/remarks&gt;
+/// &lt;param name=&quot;paramName&quot;&gt;Description of the parameter.&lt;/param&gt;
+/// &lt;returns&gt;Explanation of the return value.&lt;/returns&gt;
+/// &lt;exception cref=&quot;ExceptionType&quot;&gt;Condition that causes the exception.&lt;/exception&gt;
+</code></pre>
+<ul>
+<li>summary: A concise description of the element (class, method, property).</li>
+<li>remarks: Detailed information or additional notes about the element.</li>
+<li>param: Describes the parameters for methods or constructors. You should document each parameter individually by name.</li>
+<li>returns: Describes what the method returns.</li>
+<li>exception: Explains the exceptions the method might throw.</li>
+</ul>
+<h3 id="class-documentation-example">Class Documentation Example</h3>
+<p>A class is documented by explaining its purpose, any important details, and how it interacts with other components.</p>
+<pre><code>/// &lt;summary&gt;
+/// Represents a customer in the system.
+/// &lt;/summary&gt;
+/// &lt;remarks&gt;
+/// This class contains properties and methods for managing customer data, 
+/// including their personal details and order history.
+/// &lt;/remarks&gt;
+public class Customer
+{
+    /// &lt;summary&gt;
+    /// Gets or sets the customer's unique identifier.
+    /// &lt;/summary&gt;
+    public int CustomerId { get; set; }
+
+    /// &lt;summary&gt;
+    /// Gets or sets the name of the customer.
+    /// &lt;/summary&gt;
+    public string Name { get; set; }
+
+    /// &lt;summary&gt;
+    /// Calculates the total amount spent by the customer.
+    /// &lt;/summary&gt;
+    /// &lt;returns&gt;
+    /// The total amount spent by the customer.
+    /// &lt;/returns&gt;
+    public decimal GetTotalSpent()
+    {
+        // Logic to calculate total spent
+        return 100.50m;
+    }
+}
+</code></pre>
+<h3 id="method-documentation-example">Method Documentation Example</h3>
+<p>Methods should be documented to explain their purpose, parameters, return values, and any exceptions they may throw.</p>
+<pre><code>/// &lt;summary&gt;
+/// Adds a new order for the customer.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;order&quot;&gt;The order to add.&lt;/param&gt;
+/// &lt;exception cref=&quot;ArgumentNullException&quot;&gt;Thrown when the order is null.&lt;/exception&gt;
+/// &lt;exception cref=&quot;InvalidOperationException&quot;&gt;Thrown when the customer is not eligible to place an order.&lt;/exception&gt;
+public void AddOrder(Order order)
+{
+    if (order == null)
+    {
+        throw new ArgumentNullException(nameof(order), &quot;Order cannot be null.&quot;);
+    }
+
+    // Logic for adding an order
+}
+</code></pre>
+<h3 id="property-documentation-example">Property Documentation Example</h3>
+<p>Document properties with a short description of what they represent.</p>
+<pre><code>/// &lt;summary&gt;
+/// Gets or sets the customer's email address.
+/// &lt;/summary&gt;
+/// &lt;value&gt;
+/// The email address of the customer.
+/// &lt;/value&gt;
+public string Email { get; set; }
+</code></pre>
+<h3 id="constructor-documentation-example">Constructor Documentation Example</h3>
+<p>Constructors are documented similarly to methods but with an emphasis on explaining what the constructor is initializing.</p>
+<pre><code>/// &lt;summary&gt;
+/// Initializes a new instance of the &lt;see cref=&quot;Customer&quot;/&gt; class.
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;customerId&quot;&gt;The unique identifier for the customer.&lt;/param&gt;
+/// &lt;param name=&quot;name&quot;&gt;The name of the customer.&lt;/param&gt;
+public Customer(int customerId, string name)
+{
+    CustomerId = customerId;
+    Name = name;
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/kaushiknatua12345/EnginneringDocRepo/blob/master/DotNetOpenAPI/DotNetOpenAPI/docfx/CodeCommentsStandardsDorNet8.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
