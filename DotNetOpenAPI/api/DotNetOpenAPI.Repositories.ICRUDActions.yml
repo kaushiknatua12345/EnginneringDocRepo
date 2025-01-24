@@ -1,0 +1,272 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetOpenAPI.Repositories.ICRUDActions
+  commentId: T:DotNetOpenAPI.Repositories.ICRUDActions
+  id: ICRUDActions
+  parent: DotNetOpenAPI.Repositories
+  children:
+  - DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee(System.Int32)
+  - DotNetOpenAPI.Repositories.ICRUDActions.GetEmployees
+  langs:
+  - csharp
+  - vb
+  name: ICRUDActions
+  nameWithType: ICRUDActions
+  fullName: DotNetOpenAPI.Repositories.ICRUDActions
+  type: Interface
+  source:
+    remote:
+      path: DotNetOpenAPI/DotNetOpenAPI/Repositories/ICRUDActions.cs
+      branch: master
+      repo: https://github.com/kaushiknatua12345/EnginneringDocRepo.git
+    id: ICRUDActions
+    path: DotNetOpenAPI/Repositories/ICRUDActions.cs
+    startLine: 3
+  assemblies:
+  - DotNetOpenAPI
+  namespace: DotNetOpenAPI.Repositories
+  syntax:
+    content: public interface ICRUDActions
+    content.vb: Public Interface ICRUDActions
+- uid: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployees
+  commentId: M:DotNetOpenAPI.Repositories.ICRUDActions.GetEmployees
+  id: GetEmployees
+  parent: DotNetOpenAPI.Repositories.ICRUDActions
+  langs:
+  - csharp
+  - vb
+  name: GetEmployees()
+  nameWithType: ICRUDActions.GetEmployees()
+  fullName: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployees()
+  type: Method
+  source:
+    remote:
+      path: DotNetOpenAPI/DotNetOpenAPI/Repositories/ICRUDActions.cs
+      branch: master
+      repo: https://github.com/kaushiknatua12345/EnginneringDocRepo.git
+    id: GetEmployees
+    path: DotNetOpenAPI/Repositories/ICRUDActions.cs
+    startLine: 5
+  assemblies:
+  - DotNetOpenAPI
+  namespace: DotNetOpenAPI.Repositories
+  syntax:
+    content: List<EmployeeDB> GetEmployees()
+    return:
+      type: System.Collections.Generic.List{DotNetOpenAPI.Models.EmployeeDB}
+    content.vb: Function GetEmployees() As List(Of EmployeeDB)
+  overload: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployees*
+- uid: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee(System.Int32)
+  commentId: M:DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee(System.Int32)
+  id: GetEmployee(System.Int32)
+  parent: DotNetOpenAPI.Repositories.ICRUDActions
+  langs:
+  - csharp
+  - vb
+  name: GetEmployee(int)
+  nameWithType: ICRUDActions.GetEmployee(int)
+  fullName: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee(int)
+  type: Method
+  source:
+    remote:
+      path: DotNetOpenAPI/DotNetOpenAPI/Repositories/ICRUDActions.cs
+      branch: master
+      repo: https://github.com/kaushiknatua12345/EnginneringDocRepo.git
+    id: GetEmployee
+    path: DotNetOpenAPI/Repositories/ICRUDActions.cs
+    startLine: 6
+  assemblies:
+  - DotNetOpenAPI
+  namespace: DotNetOpenAPI.Repositories
+  syntax:
+    content: EmployeeDB? GetEmployee(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: DotNetOpenAPI.Models.EmployeeDB
+    content.vb: Function GetEmployee(id As Integer) As EmployeeDB
+  overload: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee*
+  nameWithType.vb: ICRUDActions.GetEmployee(Integer)
+  fullName.vb: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee(Integer)
+  name.vb: GetEmployee(Integer)
+references:
+- uid: DotNetOpenAPI.Repositories
+  commentId: N:DotNetOpenAPI.Repositories
+  href: DotNetOpenAPI.html
+  name: DotNetOpenAPI.Repositories
+  nameWithType: DotNetOpenAPI.Repositories
+  fullName: DotNetOpenAPI.Repositories
+  spec.csharp:
+  - uid: DotNetOpenAPI
+    name: DotNetOpenAPI
+    href: DotNetOpenAPI.html
+  - name: .
+  - uid: DotNetOpenAPI.Repositories
+    name: Repositories
+    href: DotNetOpenAPI.Repositories.html
+  spec.vb:
+  - uid: DotNetOpenAPI
+    name: DotNetOpenAPI
+    href: DotNetOpenAPI.html
+  - name: .
+  - uid: DotNetOpenAPI.Repositories
+    name: Repositories
+    href: DotNetOpenAPI.Repositories.html
+- uid: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployees*
+  commentId: Overload:DotNetOpenAPI.Repositories.ICRUDActions.GetEmployees
+  href: DotNetOpenAPI.Repositories.ICRUDActions.html#DotNetOpenAPI_Repositories_ICRUDActions_GetEmployees
+  name: GetEmployees
+  nameWithType: ICRUDActions.GetEmployees
+  fullName: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployees
+- uid: System.Collections.Generic.List{DotNetOpenAPI.Models.EmployeeDB}
+  commentId: T:System.Collections.Generic.List{DotNetOpenAPI.Models.EmployeeDB}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<EmployeeDB>
+  nameWithType: List<EmployeeDB>
+  fullName: System.Collections.Generic.List<DotNetOpenAPI.Models.EmployeeDB>
+  nameWithType.vb: List(Of EmployeeDB)
+  fullName.vb: System.Collections.Generic.List(Of DotNetOpenAPI.Models.EmployeeDB)
+  name.vb: List(Of EmployeeDB)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: DotNetOpenAPI.Models.EmployeeDB
+    name: EmployeeDB
+    href: DotNetOpenAPI.Models.EmployeeDB.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: DotNetOpenAPI.Models.EmployeeDB
+    name: EmployeeDB
+    href: DotNetOpenAPI.Models.EmployeeDB.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee*
+  commentId: Overload:DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee
+  href: DotNetOpenAPI.Repositories.ICRUDActions.html#DotNetOpenAPI_Repositories_ICRUDActions_GetEmployee_System_Int32_
+  name: GetEmployee
+  nameWithType: ICRUDActions.GetEmployee
+  fullName: DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: DotNetOpenAPI.Models.EmployeeDB
+  commentId: T:DotNetOpenAPI.Models.EmployeeDB
+  parent: DotNetOpenAPI.Models
+  href: DotNetOpenAPI.Models.EmployeeDB.html
+  name: EmployeeDB
+  nameWithType: EmployeeDB
+  fullName: DotNetOpenAPI.Models.EmployeeDB
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DotNetOpenAPI.Models
+  commentId: N:DotNetOpenAPI.Models
+  href: DotNetOpenAPI.html
+  name: DotNetOpenAPI.Models
+  nameWithType: DotNetOpenAPI.Models
+  fullName: DotNetOpenAPI.Models
+  spec.csharp:
+  - uid: DotNetOpenAPI
+    name: DotNetOpenAPI
+    href: DotNetOpenAPI.html
+  - name: .
+  - uid: DotNetOpenAPI.Models
+    name: Models
+    href: DotNetOpenAPI.Models.html
+  spec.vb:
+  - uid: DotNetOpenAPI
+    name: DotNetOpenAPI
+    href: DotNetOpenAPI.html
+  - name: .
+  - uid: DotNetOpenAPI.Models
+    name: Models
+    href: DotNetOpenAPI.Models.html

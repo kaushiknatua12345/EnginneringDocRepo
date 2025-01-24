@@ -1,0 +1,27 @@
+### YamlMime:TableOfContent
+items:
+- uid: DotNetOpenAPI.Controllers
+  name: DotNetOpenAPI.Controllers
+  type: Namespace
+  items:
+  - uid: DotNetOpenAPI.Controllers.EmployeesController
+    name: EmployeesController
+    type: Class
+- uid: DotNetOpenAPI.Models
+  name: DotNetOpenAPI.Models
+  type: Namespace
+  items:
+  - uid: DotNetOpenAPI.Models.EmployeeDB
+    name: EmployeeDB
+    type: Class
+- uid: DotNetOpenAPI.Repositories
+  name: DotNetOpenAPI.Repositories
+  type: Namespace
+  items:
+  - uid: DotNetOpenAPI.Repositories.CRUDActions
+    name: CRUDActions
+    type: Class
+  - uid: DotNetOpenAPI.Repositories.ICRUDActions
+    name: ICRUDActions
+    type: Interface
+memberLayout: SamePage

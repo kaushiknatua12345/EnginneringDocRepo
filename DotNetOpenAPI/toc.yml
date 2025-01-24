@@ -1,0 +1,4 @@
+- name: Docs
+  href: DotNetOpenAPIDocs/Docs/
+- name: API
+  href: api/

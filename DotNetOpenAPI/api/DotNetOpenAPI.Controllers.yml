@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetOpenAPI.Controllers
+  commentId: N:DotNetOpenAPI.Controllers
+  id: DotNetOpenAPI.Controllers
+  children:
+  - DotNetOpenAPI.Controllers.EmployeesController
+  langs:
+  - csharp
+  - vb
+  name: DotNetOpenAPI.Controllers
+  nameWithType: DotNetOpenAPI.Controllers
+  fullName: DotNetOpenAPI.Controllers
+  type: Namespace
+  assemblies:
+  - DotNetOpenAPI
+references:
+- uid: DotNetOpenAPI.Controllers.EmployeesController
+  commentId: T:DotNetOpenAPI.Controllers.EmployeesController
+  href: DotNetOpenAPI.Controllers.EmployeesController.html
+  name: EmployeesController
+  nameWithType: EmployeesController
+  fullName: DotNetOpenAPI.Controllers.EmployeesController

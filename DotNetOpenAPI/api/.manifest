@@ -1,0 +1,21 @@
+{
+  "DotNetOpenAPI.Controllers": "DotNetOpenAPI.Controllers.yml",
+  "DotNetOpenAPI.Controllers.EmployeesController": "DotNetOpenAPI.Controllers.EmployeesController.yml",
+  "DotNetOpenAPI.Controllers.EmployeesController.#ctor(DotNetOpenAPI.Repositories.ICRUDActions)": "DotNetOpenAPI.Controllers.EmployeesController.yml",
+  "DotNetOpenAPI.Controllers.EmployeesController.GetEmployee(System.Int32)": "DotNetOpenAPI.Controllers.EmployeesController.yml",
+  "DotNetOpenAPI.Controllers.EmployeesController.GetEmployees": "DotNetOpenAPI.Controllers.EmployeesController.yml",
+  "DotNetOpenAPI.Models": "DotNetOpenAPI.Models.yml",
+  "DotNetOpenAPI.Models.EmployeeDB": "DotNetOpenAPI.Models.EmployeeDB.yml",
+  "DotNetOpenAPI.Models.EmployeeDB.Department": "DotNetOpenAPI.Models.EmployeeDB.yml",
+  "DotNetOpenAPI.Models.EmployeeDB.Email": "DotNetOpenAPI.Models.EmployeeDB.yml",
+  "DotNetOpenAPI.Models.EmployeeDB.Id": "DotNetOpenAPI.Models.EmployeeDB.yml",
+  "DotNetOpenAPI.Models.EmployeeDB.Name": "DotNetOpenAPI.Models.EmployeeDB.yml",
+  "DotNetOpenAPI.Repositories": "DotNetOpenAPI.Repositories.yml",
+  "DotNetOpenAPI.Repositories.CRUDActions": "DotNetOpenAPI.Repositories.CRUDActions.yml",
+  "DotNetOpenAPI.Repositories.CRUDActions.GetEmployee(System.Int32)": "DotNetOpenAPI.Repositories.CRUDActions.yml",
+  "DotNetOpenAPI.Repositories.CRUDActions.GetEmployees": "DotNetOpenAPI.Repositories.CRUDActions.yml",
+  "DotNetOpenAPI.Repositories.CRUDActions.employees": "DotNetOpenAPI.Repositories.CRUDActions.yml",
+  "DotNetOpenAPI.Repositories.ICRUDActions": "DotNetOpenAPI.Repositories.ICRUDActions.yml",
+  "DotNetOpenAPI.Repositories.ICRUDActions.GetEmployee(System.Int32)": "DotNetOpenAPI.Repositories.ICRUDActions.yml",
+  "DotNetOpenAPI.Repositories.ICRUDActions.GetEmployees": "DotNetOpenAPI.Repositories.ICRUDActions.yml"
+}

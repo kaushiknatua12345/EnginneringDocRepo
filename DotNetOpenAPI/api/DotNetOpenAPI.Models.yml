@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetOpenAPI.Models
+  commentId: N:DotNetOpenAPI.Models
+  id: DotNetOpenAPI.Models
+  children:
+  - DotNetOpenAPI.Models.EmployeeDB
+  langs:
+  - csharp
+  - vb
+  name: DotNetOpenAPI.Models
+  nameWithType: DotNetOpenAPI.Models
+  fullName: DotNetOpenAPI.Models
+  type: Namespace
+  assemblies:
+  - DotNetOpenAPI
+references:
+- uid: DotNetOpenAPI.Models.EmployeeDB
+  commentId: T:DotNetOpenAPI.Models.EmployeeDB
+  parent: DotNetOpenAPI.Models
+  href: DotNetOpenAPI.Models.EmployeeDB.html
+  name: EmployeeDB
+  nameWithType: EmployeeDB
+  fullName: DotNetOpenAPI.Models.EmployeeDB
+- uid: DotNetOpenAPI.Models
+  commentId: N:DotNetOpenAPI.Models
+  href: DotNetOpenAPI.html
+  name: DotNetOpenAPI.Models
+  nameWithType: DotNetOpenAPI.Models
+  fullName: DotNetOpenAPI.Models
+  spec.csharp:
+  - uid: DotNetOpenAPI
+    name: DotNetOpenAPI
+    href: DotNetOpenAPI.html
+  - name: .
+  - uid: DotNetOpenAPI.Models
+    name: Models
+    href: DotNetOpenAPI.Models.html
+  spec.vb:
+  - uid: DotNetOpenAPI
+    name: DotNetOpenAPI
+    href: DotNetOpenAPI.html
+  - name: .
+  - uid: DotNetOpenAPI.Models
+    name: Models
+    href: DotNetOpenAPI.Models.html

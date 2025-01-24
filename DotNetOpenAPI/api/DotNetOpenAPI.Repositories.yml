@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: DotNetOpenAPI.Repositories
+  commentId: N:DotNetOpenAPI.Repositories
+  id: DotNetOpenAPI.Repositories
+  children:
+  - DotNetOpenAPI.Repositories.CRUDActions
+  - DotNetOpenAPI.Repositories.ICRUDActions
+  langs:
+  - csharp
+  - vb
+  name: DotNetOpenAPI.Repositories
+  nameWithType: DotNetOpenAPI.Repositories
+  fullName: DotNetOpenAPI.Repositories
+  type: Namespace
+  assemblies:
+  - DotNetOpenAPI
+references:
+- uid: DotNetOpenAPI.Repositories.CRUDActions
+  commentId: T:DotNetOpenAPI.Repositories.CRUDActions
+  href: DotNetOpenAPI.Repositories.CRUDActions.html
+  name: CRUDActions
+  nameWithType: CRUDActions
+  fullName: DotNetOpenAPI.Repositories.CRUDActions
+- uid: DotNetOpenAPI.Repositories.ICRUDActions
+  commentId: T:DotNetOpenAPI.Repositories.ICRUDActions
+  parent: DotNetOpenAPI.Repositories
+  href: DotNetOpenAPI.Repositories.ICRUDActions.html
+  name: ICRUDActions
+  nameWithType: ICRUDActions
+  fullName: DotNetOpenAPI.Repositories.ICRUDActions
+- uid: DotNetOpenAPI.Repositories
+  commentId: N:DotNetOpenAPI.Repositories
+  href: DotNetOpenAPI.html
+  name: DotNetOpenAPI.Repositories
+  nameWithType: DotNetOpenAPI.Repositories
+  fullName: DotNetOpenAPI.Repositories
+  spec.csharp:
+  - uid: DotNetOpenAPI
+    name: DotNetOpenAPI
+    href: DotNetOpenAPI.html
+  - name: .
+  - uid: DotNetOpenAPI.Repositories
+    name: Repositories
+    href: DotNetOpenAPI.Repositories.html
+  spec.vb:
+  - uid: DotNetOpenAPI
+    name: DotNetOpenAPI
+    href: DotNetOpenAPI.html
+  - name: .
+  - uid: DotNetOpenAPI.Repositories
+    name: Repositories
+    href: DotNetOpenAPI.Repositories.html
