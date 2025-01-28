@@ -84,18 +84,15 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 
     app.UseSwaggerUI(c =>
     {
-         c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-        c.RoutePrefix = string.Empty;
+         c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");        
     });
 }
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+app.MapControllers();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-});
+
 
 
 
