@@ -2,3 +2,5 @@
   href: DotNetOpenAPIDocs/Docs/
 - name: API
   href: api/
+- Swagger UI
+  href: DotNetOpenAPI/DotNetOpenAPI/swagger.json
