@@ -134,4 +134,8 @@
     "title": "This is the HOMEPAGE. | DotNetOpenAPIDocs",
     "keywords": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
   }
-}
+  "Swagger UI:"
+  {
+  "href": "DotNetOpenAPI/DotNetOpenAPI/swagger.json",
+  "title": "This is OpenAPI Documentation which we can view using Swagger UI",
+  "keywords": "This is OpenAPI Documentation which we can view using Swagger UI"
